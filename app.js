@@ -4,9 +4,7 @@ import bodyParse from "body-parser";
 import userRouter from "./routes/userRouter.js";
 import "./models/_conn.js";
 import cors from "cors";
-import env from "dotenv";
 
-env.config();
 const { server } = config;
 // Init
 const app = express();

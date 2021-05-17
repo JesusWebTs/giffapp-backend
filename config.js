@@ -1,12 +1,15 @@
 import { join } from "path";
+import env from "dotenv";
+env.config();
+
 export default {
   server: {
     HOST: "localhost",
     PORT: process.env.PORT || 8000,
   },
   db: {
-    HOST: "",
-    PORT: "",
+    dbUser: process.env.dbUser,
+    dbPassword: process.env.dbPassword,
   },
   express_sets: {
     /* api: {
