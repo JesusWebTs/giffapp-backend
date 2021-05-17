@@ -1,7 +1,3 @@
-import { join } from "path";
-import env from "dotenv";
-env.config();
-
 export default {
   server: {
     HOST: "localhost",
@@ -20,5 +16,3 @@ export default {
     }, */
   },
 };
-
-
