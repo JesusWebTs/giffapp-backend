@@ -14,7 +14,7 @@ app.set("PORT", server.PORT).set("HOST", server.HOST);
 app.use(bodyParse.json()).use(bodyParse.urlencoded({ extended: true }));
 app.use(cors());
 // Routers
-app.get("/", (_, res) => {
+app.get("/", (req, res) => {
   res.send("Hola mundo");
 });
 app.use("/api", userRouter); 
