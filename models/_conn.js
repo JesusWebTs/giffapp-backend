@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import credentials from "../credentials.js";
 const dbTarget = "users";
 const DbURI = `mongodb+srv://${process.env.dbUser}:${process.env.dbPassword}@postapp.oxrod.mongodb.net/${dbTarget}?retryWrites=true&w=majority`;
 
