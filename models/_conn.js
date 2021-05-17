@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
 import config from "../config.js";
 const dbTarget = "users";
-console.log("----------------------------");
-console.log(
-  `mongodb+srv://${config.db.dbUser}:${config.db.dbPassword}@gifi.wsuv8.mongodb.net/${dbTarget}?retryWrites=true&w=majority`
-);
-console.log("----------------------------");
 const DbURI = `mongodb+srv://${config.db.dbUser}:${config.db.dbPassword}@gifi.wsuv8.mongodb.net/${dbTarget}?retryWrites=true&w=majority`;
 
 const conn = mongoose
