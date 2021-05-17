@@ -8,8 +8,8 @@ export default {
     PORT: process.env.PORT || 8000,
   },
   db: {
-    dbUser: process.env.dbUser,
-    dbPassword: process.env.dbPassword,
+    dbUser: process.env.DB_USER,
+    dbPassword: process.env.DB_PASSWORD,
   },
   express_sets: {
     /* api: {
@@ -20,3 +20,5 @@ export default {
     }, */
   },
 };
+
+
