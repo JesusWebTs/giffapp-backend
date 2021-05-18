@@ -16,7 +16,7 @@
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
     "json-parser": "^3.1.2",
-    "mongoose": "^5.11.18",
+    "mongoose": "^5.11.15",
     "patch": "0.0.1",
     "uuid": "^8.3.2"
   }
