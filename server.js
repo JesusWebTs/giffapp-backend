@@ -1,6 +1,7 @@
 import { app } from "./app.js";
+import config from "./config";
 const PORT = app.get("PORT"),
   HOST = app.get("HOST");
 app.listen(PORT, HOST, () => {
-  console.log(`Server is Started ${HOST} on port ${PORT}`);
+  console.log(`Server is Started ${config.server.HOST} on port ${PORT}`);
 });
