@@ -15,7 +15,7 @@ app.use(bodyParse.json()).use(bodyParse.urlencoded({ extended: true }));
 app.use(cors());
 // Routers
 app.get("/", (req, res) => {
-  res.send("Hola mundo");
+  res.send("Api Rest Started endpoint /api");
 });
 app.use("/api", userRouter);
 
