@@ -1,5 +1,5 @@
 import { app } from "./app.js";
-import config from "./config";
+import config from "./config.js";
 const PORT = app.get("PORT"),
   HOST = app.get("HOST");
 app.listen(PORT, HOST, () => {
