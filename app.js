@@ -9,7 +9,7 @@ const { server } = config;
 // Init
 const app = express();
 // Settings
-app.set("PORT", server.PORT).set("HOST", server.HOST);
+app.set("PORT", server.PORT);
 // Midlewares
 app.use(bodyParse.json()).use(bodyParse.urlencoded({ extended: true }));
 app.use(cors());
@@ -17,7 +17,7 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Hola mundo");
 });
-app.use("/api", userRouter); 
+app.use("/api", userRouter);
 
 // Export
 export { app };

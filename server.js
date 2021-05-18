@@ -1,5 +1,4 @@
 import { app } from "./app.js";
-
 const PORT = app.get("PORT"),
   HOST = app.get("HOST");
 app.listen(PORT, HOST, () => {

@@ -4,7 +4,6 @@ dotenv.config();
 
 export default {
   server: {
-    HOST: "localhost",
     PORT: process.env.PORT || 8000,
   },
   db: {
